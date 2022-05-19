@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Accessibility Pilot's Quiz"/>
+        <title>Accessibility Pilot's Quiz</title>
+        <link rel="stylesheet" href="css/index.css"/>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="img/nasa-logo.png">
+            <h1>Pilot's Quiz</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#pilot-info">INFO</a>
+                    </li>
+                    <li>
+                        <a href="#theoretical-questions">EXPERIENCE</a>
+                    </li>
+                    <li>
+                        <a href="#practice-questions">PLANE</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form method="post" action="https://formspree.io/f/xayvagwo">
+                <section role="region" aria-labelledby="pilot-info">
+                    <h2 id="pilot-info">Pilot Info</h2>
+                    <div class="info">
+                        <label for="pilot-name">Name:</label>
+                        <input type="text" name="pilot-name" id="pilot-name"/>
+                    </div>
+                    <div class="info">
+                        <label for="pilot-email">Email:</label>
+                        <input type="email" name="pilot-email" id="pilot-email"/>
+                    </div>
+                    <div class="info">
+                        <label for="birth-date">
+                            D.O.B.<span class="sr-only">(Date of Birth)</span>
+                        </label>
+                        <input type="date" name="birth-date" id="birth-date"/>
+                    </div>
+                </section>
+                <section role="region" aria-labelledby="theoretical-questions">
+                    <h2 id="theoretical-questions">Experience</h2>
+                    <div class="question-block">
+                        <p>1</p>
+                        <fieldset class="question" name="theoretical-question-one">
+                            <legend>Would you try to take a training course for astronauts at the suggestion of NASA?
+              </legend>
+                            <ul class="answers-list">
+                                <li>
+                                    <label for="q1-a1">
+                                        <input type="radio" id="q1-a1" name="q1" value="yes"/>Yes
+                  
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q1-a2">
+                                        <input type="radio" id="q1-a2" name="q1" value="no"/>No
+                  
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <div class="question-block">
+                        <p>2</p>
+                        <fieldset class="question" name="theoretical-question-two">
+                            <legend>Have you been trained from private to professional pilot?
+              </legend>
+                            <ul class="answers-list">
+                                <li>
+                                    <label for="q2-a1">
+                                        <input type="radio" id="q2-a1" name="q2" value="yes"/>Yes
+                  
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q2-a2">
+                                        <input type="radio" id="q2-a2" name="q2" value="no"/>No
+                  
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </section>
+                <section role="region" aria-labelledby="practice-questions">
+                    <h2 id="practice-questions">Plane</h2>
+                    <div class="formrow">
+                        <div class="question-block">
+                            <label for="own-plane">Do you have your own plane?</label>
+                        </div>
+                        <div class="answer">
+                            <select name="own-plane" id="own-plane" required>
+                                <option value="">Select an option</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <div class="question-block">
+                            <label for="plane-questions">Do you have any questions about your plane service:</label>
+                        </div>
+                        <div class="answer">
+                            <textarea id="practice-questions" name="practice-questions" rows="5" cols="24" placeholder="When next inspection for my Shuttle..."></textarea>
+                        </div>
+                    </div>
+                </section>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <address>
+                <a href="https://www.nasa.gov">NASA</a>
+                <br/>USA
+      
+            </address>
+        </footer>
+    </body>
+</html>
