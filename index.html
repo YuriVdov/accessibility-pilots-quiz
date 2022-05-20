@@ -9,7 +9,7 @@
     </head>
     <body>
         <header>
-            <img id="logo" src="img/nasa-logo.png">
+            <img id="logo" src="img/nasa-logo.png" alt="NASA colors logo">
             <h1>Pilot's Quiz</h1>
             <nav>
                 <ul>
@@ -27,7 +27,7 @@
         </header>
         <main>
             <form method="post" action="https://formspree.io/f/xayvagwo">
-                <section role="region" aria-labelledby="pilot-info">
+                <section aria-labelledby="pilot-info">
                     <h2 id="pilot-info">Pilot Info</h2>
                     <div class="info">
                         <label for="pilot-name">Name:</label>
@@ -44,7 +44,7 @@
                         <input type="date" name="birth-date" id="birth-date"/>
                     </div>
                 </section>
-                <section role="region" aria-labelledby="theoretical-questions">
+                <section aria-labelledby="theoretical-questions">
                     <h2 id="theoretical-questions">Experience</h2>
                     <div class="question-block">
                         <p>1</p>
@@ -89,7 +89,7 @@
                         </fieldset>
                     </div>
                 </section>
-                <section role="region" aria-labelledby="practice-questions">
+                <section aria-labelledby="practice-questions">
                     <h2 id="practice-questions">Plane</h2>
                     <div class="formrow">
                         <div class="question-block">
@@ -106,7 +106,7 @@
                             <label for="plane-questions">Do you have any questions about your plane service:</label>
                         </div>
                         <div class="answer">
-                            <textarea id="practice-questions" name="practice-questions" rows="5" cols="24" placeholder="When next inspection for my Shuttle..."></textarea>
+                            <textarea id="plane-questions" name="practice-questions" rows="5" cols="24" placeholder="When next inspection for my Shuttle..."></textarea>
                         </div>
                     </div>
                 </section>
